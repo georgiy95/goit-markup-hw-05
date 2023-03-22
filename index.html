@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Хедер -->
+    <!-------------------------------------------------------------------- Хедер ------------------------------------------------------->
 
     <header class="header">
       <div class="container header-cntnr">
@@ -28,7 +28,7 @@
           >
           <ul class="hdr list">
             <li class="header-studio">
-              <a class="header-studio link" href="./index.html">Studio</a>
+              <a class="header-studio link st" href="./index.html">Studio</a>
             </li>
             <li class="header-studio">
               <a class="header-studio link" href="./portfolio.html"
@@ -65,7 +65,9 @@
       <section class="heading">
         <div class="container">
           <h1 class="heading-caption">Effective Solutions for Your Business</h1>
-          <button class="heading-btn" type="button">Order Service</button>
+          <button class="heading-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -478,5 +480,18 @@
         </div>
       </div>
     </footer>
+    <!------------------------------------------------------------------------------- Модальне вікно ------------------------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg width="8" height="8" class="modal-close-btn-icon">
+            <use
+              href="./images/symbol-defs (1).svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
